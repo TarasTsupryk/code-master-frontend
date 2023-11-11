@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
+import App from 'modules/App'
+
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 export const queryClient = new QueryClient({
