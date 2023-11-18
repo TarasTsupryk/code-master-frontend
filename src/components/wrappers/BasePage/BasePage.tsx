@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet'
 import styled from 'styled-components';
-import { Sidebar } from 'modules/core/components/Sidebar';
+import { Sidebar } from 'modules/core/Sidebar';
 
 const StyledBasePage = styled(Box)`
   min-width: 100vw;
