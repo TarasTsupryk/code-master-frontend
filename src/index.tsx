@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
-import { Grommet } from 'grommet';
 import App from "modules/App";
 import { ThemeProvider } from "components/wrappers/ThemeProvider";
 
@@ -25,11 +24,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <Grommet>
-          <ThemeProvider>
-            <App />
-          </ThemeProvider>
-        </Grommet>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>

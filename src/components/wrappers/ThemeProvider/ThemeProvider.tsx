@@ -1,5 +1,7 @@
 import React from "react";
+import { Grommet } from "grommet";
 import { ThemeProvider } from "styled-components";
+import { grommetTheme } from "styles/grommet-theme";
 import { theme } from "styles/theme";
 
 interface Props {
@@ -7,7 +9,9 @@ interface Props {
 }
 
 const OwnThemeProvider: React.FC<Props> = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  <Grommet theme={grommetTheme}>
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  </Grommet>
 );
 
 export default OwnThemeProvider;
