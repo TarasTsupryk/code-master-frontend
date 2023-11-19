@@ -1,7 +1,8 @@
 import React from "react";
+import { PageWrapper } from "components/wrappers/PageWrapper";
 
 const HelpPage = () => {
-  return <div>HelpPage</div>;
+  return <PageWrapper>HelpPage</PageWrapper>;
 };
 
 export default HelpPage;
