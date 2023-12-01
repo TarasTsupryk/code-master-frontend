@@ -23,7 +23,7 @@ const UserPopup: React.FC<Props> = ({ userLogo, userName, userLevel }) => {
       />
       <Box margin={{ left: 'spacing16' }}>
         <Text
-          size="16px"
+          size="medium"
           color="text"
         >
           {userName}

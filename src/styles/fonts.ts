@@ -1,4 +1,4 @@
-const mainFontFamily = "'Poppins', sans-serif";
+export const mainFontFamily = '\'Poppins\', Arial, sans-serif';
 
 const commonFontStyle = {
   "font-family": mainFontFamily,
