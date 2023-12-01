@@ -21,7 +21,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
     <Link to={link}>
       <StyledSidebarItem isActive={isActive} direction="row">
         {icon}
-        <Box margin={{ left: theme.spacings.spacing16 }}>{title}</Box>
+        <Box justify="center" margin={{ left: theme.spacings.spacing16 }}>{title}</Box>
       </StyledSidebarItem>
     </Link>
   );
