@@ -9,22 +9,22 @@ const useSidebarItems = () => {
       {
         icon: <HomeIcon />,
         link: routes.HOME,
-        title: "Home",
+        title: "Головна",
       },
       {
         icon: <CourseIcon />,
         link: routes.MY_COURSES,
-        title: "My courses",
+        title: "Мої курси",
       },
       {
         icon: <HelpIcon />,
         link: routes.HELP,
-        title: "Help & Support",
+        title: "Допомога",
       },
       {
         icon: <SettingIcon />,
         link: routes.SETTINGS,
-        title: "Settings",
+        title: "Налаштування",
       },
     ],
     []
