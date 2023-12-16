@@ -6,6 +6,7 @@ import MyCoursesPage from "./MyCourses.page";
 import HelpPage from "./Help.page";
 import SettingsPage from "./Settings.page";
 import LoginPage from "./Login.page";
+import TaskPage from "./Task.Page";
 
 type Page = RouteProps & {
 }
@@ -30,5 +31,9 @@ export const PAGES: Page[] = [
   {
     path: ROUTES.LOGIN,
     Component: LoginPage,
+  },
+  {
+    path: ROUTES.TASK,
+    Component: TaskPage,
   }
 ];

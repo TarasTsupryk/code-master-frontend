@@ -4,4 +4,5 @@ export default {
   HELP: "/help",
   SETTINGS: "/settings",
   LOGIN: "/login",
+  TASK: "/task/:id",
 };
