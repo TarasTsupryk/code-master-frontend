@@ -5,3 +5,5 @@ export { SettingIcon } from "./SettingIcon";
 export { WindowIcon } from "./WindowIcon";
 export { CodeIcon } from "./CodeIcon";
 export { ChevronIcon } from "./ChevronIcon";
+export { PlayIcon } from './PlayIcon';
+export { AskIcon } from './AskIcon';
