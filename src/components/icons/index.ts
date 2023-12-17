@@ -11,3 +11,4 @@ export { CheckIcon } from './CheckIcon';
 export { CrossIcon } from './CrossIcon';
 export { MessageIcon } from './MessageIcon';
 export { NotificationIcon } from './NotificationIcon';
+export { BurgerMenuIcon } from './BurgerMenuIcon';
