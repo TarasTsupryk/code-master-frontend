@@ -9,3 +9,5 @@ export { PlayIcon } from './PlayIcon';
 export { AskIcon } from './AskIcon';
 export { CheckIcon } from './CheckIcon';
 export { CrossIcon } from './CrossIcon';
+export { MessageIcon } from './MessageIcon';
+export { NotificationIcon } from './NotificationIcon';

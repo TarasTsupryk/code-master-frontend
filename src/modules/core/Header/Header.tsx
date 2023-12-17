@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Text } from "grommet";
 import { UserPopup } from "components/elements/UserPopup";
 import userLogo from 'assets/userLogo.jpg';
+import { MessageIcon, NotificationIcon } from 'components/icons';
 import { StyledHeader } from "./Header.styles";
 
 const Header = () => {
@@ -15,9 +16,10 @@ const Header = () => {
             direction="row"
             margin={{ horizontal: "spacing40" }}
             gap="spacing40"
+            align="center"
           >
-            <Box>M</Box>
-            <Box>N</Box>
+            <Box><NotificationIcon /></Box>
+            <Box><MessageIcon /></Box>
           </Box>
         </Box>
 
