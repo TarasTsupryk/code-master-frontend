@@ -32,7 +32,7 @@ const UserPopup: React.FC<Props> = ({ userLogo, userName, userLevel }) => {
           color="textSecondary"
           size="xsmall"
         >
-          Level - {userLevel}
+          Рівень - {userLevel}
         </Text>
       </Box>
     </Box>

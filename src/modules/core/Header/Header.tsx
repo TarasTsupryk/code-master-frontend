@@ -22,9 +22,9 @@ const Header = () => {
         </Box>
 
         <UserPopup
-          userName="Taras"
+          userName="Тарас Цуприк"
           userLogo={userLogo}
-          userLevel="9"
+          userLevel="1"
         />
       </Box>
     </StyledHeader>
