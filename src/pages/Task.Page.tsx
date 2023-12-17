@@ -1,13 +1,13 @@
 import React from "react";
 import { PageWrapper } from "components/wrappers/PageWrapper";
-import { Editor } from "components/controls/Editor";
+import { Task } from "modules/Task";
 
-const Task = () => {
+const TaskPage = () => {
   return (
     <PageWrapper>
-      <Editor />
+      <Task />
     </PageWrapper>
   );
 };
 
-export default Task;
+export default TaskPage;
