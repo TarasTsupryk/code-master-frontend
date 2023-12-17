@@ -7,3 +7,5 @@ export { CodeIcon } from "./CodeIcon";
 export { ChevronIcon } from "./ChevronIcon";
 export { PlayIcon } from './PlayIcon';
 export { AskIcon } from './AskIcon';
+export { CheckIcon } from './CheckIcon';
+export { CrossIcon } from './CrossIcon';
