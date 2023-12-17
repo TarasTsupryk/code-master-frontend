@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Text } from "grommet";
 import { UserPopup } from "components/elements/UserPopup";
+import userLogo from 'assets/userLogo.jpg';
 import { StyledHeader } from "./Header.styles";
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
 
         <UserPopup
           userName="Taras"
-          userLogo="https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg"
+          userLogo={userLogo}
           userLevel="9"
         />
       </Box>
