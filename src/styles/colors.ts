@@ -7,6 +7,7 @@ export const colors = {
   primaryShade: "#E9EDFF",
   secondaryShade: "#FFEFE0",
   grayShade: "#F8F8FB",
+  grayShade2: "#C9CED6",
   gradient: "linear-gradient(205deg, #418CD1 10.93%, #9C41D1 116.08%)",
   whiteTransparentS: "rgba(255, 255, 255, 0.1)",
   whiteTransparentM: "rgba(255, 255, 255, 0.2)",

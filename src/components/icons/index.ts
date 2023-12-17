@@ -12,3 +12,4 @@ export { CrossIcon } from './CrossIcon';
 export { MessageIcon } from './MessageIcon';
 export { NotificationIcon } from './NotificationIcon';
 export { BurgerMenuIcon } from './BurgerMenuIcon';
+export { SearchIcon } from './SearchIcon';
