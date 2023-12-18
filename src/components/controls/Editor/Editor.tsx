@@ -17,7 +17,7 @@ const Editor2 = () => {
 
   return (
     <Box>
-      <Box round="spacing12" background="white" pad="spacing12">
+      <Box>
         <Box direction="row">
           <ActionBtn pad="spacing8" background="primary">
             <PlayIcon color="white" />
@@ -33,7 +33,7 @@ const Editor2 = () => {
           </ActionBtn>
         </Box>
 
-        <Box direction="row" margin={{ top: 'spacing8' }} pad={{ horizontal: "spacing24" }}>
+        <Box direction="row" margin={{ top: 'spacing24' }} pad={{ horizontal: "spacing24" }}>
           <FileBtn>main.py</FileBtn>
         </Box>
 
