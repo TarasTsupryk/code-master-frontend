@@ -13,4 +13,5 @@ export const StyledSidebarContainer = styled(Box)`
   width: 300px;
   max-width: 300px
   margin-right: 300px;
+  padding-bottom: 50px;
 `;

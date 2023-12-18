@@ -14,3 +14,5 @@ export { NotificationIcon } from './NotificationIcon';
 export { BurgerMenuIcon } from './BurgerMenuIcon';
 export { SearchIcon } from './SearchIcon';
 export { PlusIcon } from './PlusIcon';
+export { MessageIcon2 } from './MessageIcon2';
+export { ExitIcon } from './ExitIcon';

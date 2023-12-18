@@ -9,6 +9,7 @@ export interface SidebarItemProps {
   title: string;
   link: string;
   isActive?: boolean;
+  isBottom?: boolean;
 }
 
 const SidebarItem: React.FC<SidebarItemProps> = ({
@@ -16,10 +17,11 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
   title,
   link,
   isActive,
+  isBottom,
 }) => {
   return (
-    <Link to={link}>
-      <StyledSidebarItem isActive={isActive} direction="row">
+    <Link {...isBottom ? { style: { marginTop: 'auto' } } : {}} to={link}>
+      <StyledSidebarItem isActive={isActive} direction="row" align="center">
         {icon}
         <Box justify="center" margin={{ left: theme.spacings.spacing16 }}>{title}</Box>
       </StyledSidebarItem>

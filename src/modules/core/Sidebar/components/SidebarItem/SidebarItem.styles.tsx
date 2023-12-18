@@ -5,6 +5,7 @@ export const StyledSidebarItem = styled(Box)<{ isActive?: boolean }>`
   padding: ${({ theme }) => theme.spacings.spacing16};
   color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.rounds.round8};
+  font-size: 14px;
 
   &:hover {
     ${({ theme, isActive }) => {
@@ -26,7 +27,7 @@ export const StyledSidebarItem = styled(Box)<{ isActive?: boolean }>`
 
   & > svg {
     fill: ${({ theme }) => theme.colors.white};
-    height: ${({ theme }) => theme.spacings.spacing28};
-    width: ${({ theme }) => theme.spacings.spacing28};
+    height: ${({ theme }) => theme.spacings.spacing20};
+    width: ${({ theme }) => theme.spacings.spacing20};
   }
 `;

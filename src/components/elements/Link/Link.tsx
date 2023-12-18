@@ -16,10 +16,11 @@ const StyledLink = styled(RouterLink)`
 interface Props {
   to: string;
   children: React.ReactNode;
+  style?: React.CSSProperties;
 }
 
-const Link: React.FC<Props> = ({ children, to }) => (
-  <StyledLink to={to}>{children}</StyledLink>
+const Link: React.FC<Props> = ({ children, to, style }) => (
+  <StyledLink style={style} to={to}>{children}</StyledLink>
 );
 
 export default Link;

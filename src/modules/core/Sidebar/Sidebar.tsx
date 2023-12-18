@@ -19,6 +19,7 @@ const Sidebar = () => {
             title={item.title}
             link={item.link}
             isActive={item.link === pathname}
+            isBottom={item.isBottom}
           />
         ))}
       </StyledSidebarContainer>
