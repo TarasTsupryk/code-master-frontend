@@ -15,5 +15,10 @@ export const FileBtn = styled(Box)`
   border-bottom: none;
   padding: ${({ theme }) => theme.spacings.spacing4}
     ${({ theme }) => theme.spacings.spacing8};
-  background: lightgray;
+  background: #E8E8E8;
+  font-size: 11px;
+  font-weight: 700;
+  width: 100px;
+  align-items: center;
+  margin-bottom: -6px;
 `;
