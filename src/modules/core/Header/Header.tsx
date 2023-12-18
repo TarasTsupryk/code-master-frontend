@@ -31,7 +31,7 @@ const Header = () => {
             <Box margin={{ right: "spacing8" }}>
               <PlusIcon size="12px" />
             </Box>
-            <Text size="small">Створити курс</Text>
+            <Text size="xsmall">Створити курс</Text>
           </Button>
           <Box
             direction="row"

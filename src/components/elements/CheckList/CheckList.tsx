@@ -36,9 +36,9 @@ const CheckList: React.FC<Props> = ({ title, items }) => {
                 <Text size="small">{`C${index + 1}`}</Text>
               </ItemNumber>
               <Box margin={{ left: "spacing16" }} width="100%">
-                <Text>{item.title}</Text>
+                <Text size="small">{item.title}</Text>
               </Box>
-              <Box width={{ min: "spacing24" }} margin={{ left: "spacing12" }}>
+              <Box width={{ min: "spacing24" }} margin={{ left: "18px" }}>
                 {typeof item?.isChecked === "boolean" && (
                   <>
                     {item.isChecked ? (

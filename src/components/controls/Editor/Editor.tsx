@@ -21,7 +21,7 @@ const Editor2 = () => {
         <Box direction="row">
           <ActionBtn pad="spacing8" background="primary">
             <PlayIcon color="white" />
-            <Text margin={{ left: "spacing8" }}>Запуск</Text>
+            <Text margin={{ left: "spacing8" }} size="xsmall">Запуск</Text>
           </ActionBtn>
           <ActionBtn
             margin={{ left: "spacing24" }}
@@ -29,7 +29,7 @@ const Editor2 = () => {
             background="secondary"
           >
             <AskIcon color="white" />
-            <Text margin={{ left: "spacing8" }}>Перевірка</Text>
+            <Text margin={{ left: "spacing8" }} size="xsmall">Перевірка</Text>
           </ActionBtn>
         </Box>
 

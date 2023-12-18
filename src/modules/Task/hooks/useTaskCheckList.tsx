@@ -19,9 +19,9 @@ const useTaskCheckList = () => {
       },
       {
         title: (
-          <Text>
+          <Text size="small">
             При отриманому значені{" "}
-            <Text weight={500} color="secondary">
+            <Text weight={500} color="secondary" size="small">
               5
             </Text>{" "}
             функція повинна повертати значення 152
@@ -31,13 +31,13 @@ const useTaskCheckList = () => {
       },
       {
         title: (
-          <Text>
+          <Text size="small">
             При отриманому значені{" "}
-            <Text weight={500} color="secondary">
+            <Text weight={500} color="secondary" size="small">
               16
             </Text>{" "}
             функція повинна повертутви значення{" "}
-            <Text weight={500} color="secondary">
+            <Text weight={500} color="secondary" size="small">
               1538
             </Text>
           </Text>
@@ -46,13 +46,13 @@ const useTaskCheckList = () => {
       },
       {
         title: (
-          <Text>
+          <Text size="small">
             При отриманому значені{" "}
-            <Text weight={500} color="secondary">
+            <Text weight={500} color="secondary" size="small">
               23
             </Text>{" "}
             функція повинна повертутви значення{" "}
-            <Text weight={500} color="secondary">
+            <Text weight={500} color="secondary" size="small">
               3176
             </Text>
           </Text>

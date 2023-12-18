@@ -7,7 +7,7 @@ import useTaskCheckList from "./hooks/useTaskCheckList";
 const Task = () => {
   const taskCheckList = useTaskCheckList();
   return (
-    <Box direction="row">
+    <Box direction="row" align="start">
       <Box width="100%" round="spacing12" background="white" pad="spacing32">
         <Text size="20px" weight={700}>
           Задача 13. Порахуйте кількість кубиків із фарбою
@@ -39,8 +39,8 @@ const Task = () => {
         margin={{ left: "30px" }}
         round="spacing12"
         background="white"
-        pad="spacing32"
-        width={{ width: "100%", max: "320px" }}
+        pad="30px"
+        width={{ width: "100%", max: "314px" }}
       >
         <CheckList title="Умови виконання задачі" items={taskCheckList} />
       </Box>

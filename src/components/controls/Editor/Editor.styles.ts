@@ -3,10 +3,14 @@ import { Box } from "grommet";
 import styled from "styled-components";
 
 export const ActionBtn = styled(Box)`
-  padding: ${({ theme }) => theme.spacings.spacing12};
+  padding: ${({ theme }) => theme.spacings.spacing8} ${({ theme }) => theme.spacings.spacing12};
   color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.rounds.round8};
   flex-direction: row;
+  font-weight: 700;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const FileBtn = styled(Box)`
