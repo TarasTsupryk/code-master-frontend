@@ -8,6 +8,7 @@ import {
   BurgerMenuIcon,
   SearchIcon,
 } from "components/icons";
+import { Button } from 'components/elements/Button';
 import { StyledHeader } from "./Header.styles";
 
 const Header = () => {
@@ -25,6 +26,7 @@ const Header = () => {
         </Box>
 
         <Box justify="center" margin={{ left: "auto" }}>
+          <Button>Створити курс</Button>
           <Box
             direction="row"
             margin={{ horizontal: "spacing40" }}
