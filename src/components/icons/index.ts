@@ -13,3 +13,4 @@ export { MessageIcon } from './MessageIcon';
 export { NotificationIcon } from './NotificationIcon';
 export { BurgerMenuIcon } from './BurgerMenuIcon';
 export { SearchIcon } from './SearchIcon';
+export { PlusIcon } from './PlusIcon';

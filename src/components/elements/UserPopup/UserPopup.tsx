@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Box, Text } from "grommet";
+import { ChevronIcon } from 'components/icons';
 import { UserLogo } from "./UserPopup.styles";
 
 interface Props {
@@ -34,6 +35,9 @@ const UserPopup: React.FC<Props> = ({ userLogo, userName, userLevel }) => {
         >
           Рівень - {userLevel}
         </Text>
+      </Box>
+      <Box style={{ rotate: '90deg' }} margin={{ left: 'spacing4' }}>
+        <ChevronIcon />
       </Box>
     </Box>
   );
