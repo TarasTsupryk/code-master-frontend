@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Text } from "grommet";
 import { Editor } from "components/controls/Editor";
 import { CheckList } from "components/elements/CheckList";
+import { Status } from 'common/types';
 import useTaskCheckList from "./hooks/useTaskCheckList";
 
 const Task = () => {
-  const taskCheckList = useTaskCheckList();
+  const [status, setStatus] = useState('');
+  const taskCheckList = useTaskCheckList(status);
+
   return (
     <Box direction="row" align="start">
       <Box width="100%" round="spacing12" background="white" pad="spacing32">
@@ -21,7 +24,7 @@ const Task = () => {
           </Text>
         </Text>
         <Box margin={{ top: "spacing24" }}>
-          <Editor />
+          <Editor onSetStatus={setStatus} />
         </Box>
         <Text size="medium" weight={700} margin={{ top: "spacing32" }}>
           Результат запуску

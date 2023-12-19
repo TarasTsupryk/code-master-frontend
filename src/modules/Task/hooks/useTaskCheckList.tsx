@@ -1,21 +1,22 @@
 import React, { useMemo } from "react";
 import { CheckItem } from "common/types";
 import { Text } from "grommet";
+import { Status } from 'common/types';
 
-const useTaskCheckList = () => {
+const useTaskCheckList = (status: string) => {
   const taskCheckList: CheckItem[] = useMemo(
     () => [
       {
         title: "Оголосити функцію count_squares",
-        isChecked: true,
+        ...!status.length ? {} : { isChecked: status.length > 1 },
       },
       {
         title: "Функція повинна приймати значення типу number",
-        isChecked: true,
+        ...!status.length ? {} : { isChecked: status.length > 1 },
       },
       {
         title: "Функція повинна повертати значення типу number",
-        isChecked: true,
+        ...!status.length ? {} : { isChecked: status.length > 1 },
       },
       {
         title: (
@@ -27,7 +28,7 @@ const useTaskCheckList = () => {
             функція повинна повертати значення 152
           </Text>
         ),
-        isChecked: true,
+        ...!status.length ? {} : { isChecked: status.length > 20 },
       },
       {
         title: (
@@ -42,7 +43,7 @@ const useTaskCheckList = () => {
             </Text>
           </Text>
         ),
-        isChecked: false,
+        ...!status.length ? {} : { isChecked: status.length > 20 },
       },
       {
         title: (
@@ -57,10 +58,10 @@ const useTaskCheckList = () => {
             </Text>
           </Text>
         ),
-        // isChecked: false,
+        ...!status.length ? {} : { isChecked: status.length > 20 },
       },
     ],
-    []
+    [status]
   );
 
   return taskCheckList;

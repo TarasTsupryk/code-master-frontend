@@ -4,13 +4,18 @@ import Editor from "@monaco-editor/react";
 import ClipLoader from "react-spinners/ClipLoader";
 import { PlayIcon, AskIcon, CrossIcon } from "components/icons";
 import { Button } from "components/elements/Button";
+import { Status } from 'common/types';
 import { ActionBtn, FileBtn, SuccessPopupWrapper } from "./Editor.styles";
 
 const override: CSSProperties = {
   margin: "0 auto",
 };
 
-const Editor2 = () => {
+interface Props {
+  onSetStatus: (value: string) => void;
+}
+
+const Editor2: React.FC<Props> = ({ onSetStatus }) => {
   const [codeValue, setCodeValue] = useState("");
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -24,22 +29,25 @@ const Editor2 = () => {
 
   const handleOnCheckCode = useCallback(() => {
     setIsError(false);
+    onSetStatus('');
     setIsLoading(true);
 
     if (codeValue.length < 20) {
       setTimeout(() => {
         setIsError(true);
+        onSetStatus(codeValue);
         setIsSuccess(false);
         setIsLoading(false);
       }, 5000);
     } else {
       setTimeout(() => {
         setIsError(false);
+        onSetStatus(codeValue);
         setIsSuccess(true);
         setIsLoading(false);
       }, 5000);
     }
-  }, [codeValue]);
+  }, [codeValue, onSetStatus]);
 
   return (
     <Box>
@@ -159,8 +167,10 @@ const Editor2 = () => {
           align="center"
           style={{ position: "absolute", bottom: "30px", left: "30px" }}
         >
-          <Text size="13px" color="white" margin={{ right: '20px' }}>Не виконані всі умови</Text>
-          <CrossIcon style={{ cursor: 'pointer' }} color="white" />
+          <Text size="13px" color="white" margin={{ right: "20px" }}>
+            Не виконані всі умови
+          </Text>
+          <CrossIcon style={{ cursor: "pointer" }} color="white" />
         </Box>
       )}
     </Box>
