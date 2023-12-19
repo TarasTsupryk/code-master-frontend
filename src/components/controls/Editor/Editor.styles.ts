@@ -26,3 +26,14 @@ export const FileBtn = styled(Box)`
   align-items: center;
   margin-bottom: -6px;
 `;
+
+export const SuccessPopupWrapper = styled(Box)`
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+`;
