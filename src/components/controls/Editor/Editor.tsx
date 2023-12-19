@@ -150,6 +150,19 @@ const Editor2 = () => {
           </Box>
         </SuccessPopupWrapper>
       )}
+      {isError && (
+        <Box
+          background="error"
+          round="8px"
+          pad="spacing12"
+          direction="row"
+          align="center"
+          style={{ position: "absolute", bottom: "30px", left: "30px" }}
+        >
+          <Text size="13px" color="white" margin={{ right: '20px' }}>Не виконані всі умови</Text>
+          <CrossIcon style={{ cursor: 'pointer' }} color="white" />
+        </Box>
+      )}
     </Box>
   );
 };
